@@ -60,11 +60,11 @@ Licence URI: http://www.os-templates.com/template-terms
   <nav id="mainav" class="clear"> 
     <!-- ################################################################################################ -->
     <ul class="clear">
-      <li><a href="index.html">News</a></li>
+      <li class="active"><a href="index.html">News</a></li>
       <li><a href="page_1.html">Sport</a></li>
       <li><a href="page_2.html">Politic</a></li>
       <li><a href="page_3.html">Medecin</a></li>
-      <li class="active"><a href="page_4.html">Techno</a></li>
+      <li><a href="page_4.html">Techno</a></li>
     </ul>
     <!-- ################################################################################################ --> 
   </nav>
@@ -97,7 +97,7 @@ Licence URI: http://www.os-templates.com/template-terms
           <p class="nospace">Sociable on as carriage my position weddings raillery consider. Peculiar trifling absolute and wandered vicinity property yet. <a href="articles/article_1.html"><span class="icon-arrow-right"></span></a></p>
         </div>
       </li>
-      <li class="one_third borderedbox lt_bg"><a href="articles/article_1.html"><img src="images/demo/320x260_2.jpg" alt=""></a>
+      <li class="one_third borderedbox lt_bg"><a href="articles/article_1.html"><img src="images/demo/320x260_3.jpg" alt=""></a>
         <div class="pad30">
           <h2 class="uppercase nospace push15">Connection interested</h2>
           <p class="nospace">Is post each that just leaf no. He connection interested so we an sympathize advantages. To said is it shed want do. <a href="articles/article_1.html"><span class="icon-arrow-right"></span></a></p>
@@ -172,5 +172,43 @@ Licence URI: http://www.os-templates.com/template-terms
 <!-- JAVASCRIPTS --> 
 <script src="layout/scripts/jquery.min.js"></script> 
 <script src="layout/scripts/sss/sss.min.js"></script>
+<!-- TRACKER
+<script type="text/javascript">
+ window.ytrackAsyncInit = function() {
+        var _wt1Q = this._wt1Q || [];
+        var _y_account = "<Replacer par le bon code>";
+        
+        window.Ytrack.init({
+            "account" : _y_account,
+            "domain_id" : "0006",
+            "domain_version" : "2",
+            "domain" : "<Remplacer par le bon domain>",
+            "parts" : {"8a1b58c": false}
+        });
+
+        _wt1Q.setTrackAccept(true);
+        
+        var _PM_ID = Ytrack.getParamValue('PMID');
+        var _PM_SRC = Ytrack.getParamValue('PMSRC_CAMPAIGN','email');
+        
+        if (_PM_ID==''){ 
+         _PM_SRC='';
+     }
+
+        _wt1Q.push([ "setVisitorParam", "_PmId", _PM_ID ]);
+        _wt1Q.push([ "setVisitorParam", "_PmSrc", _PM_SRC ]);
+        _wt1Q.push([ "trackPage", { }]);
+ };
+
+    (function() {
+        var e = document.createElement("script");
+        e.async = true;
+        e.src = "//cdn.dmp.y-track.com/" + _y_account + "/v5/tracker.min.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(e, s);
+    }());
+  -->
+  alert("tracker !");
+</script>
 </body>
 </html>
